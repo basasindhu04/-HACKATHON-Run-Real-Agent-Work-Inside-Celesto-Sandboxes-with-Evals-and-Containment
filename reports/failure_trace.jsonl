@@ -1,0 +1,11 @@
+{"step": 1, "action": "boot_guest", "status": "ok", "sandbox_name": "sbx-steprecov01", "ts": "2026-10-23T10:15:00.102Z"}
+{"step": 2, "action": "verify_environment", "status": "ok", "sandbox_name": "sbx-steprecov01", "ts": "2026-10-23T10:15:01.340Z"}
+{"step": 3, "action": "clone_issue_repository", "status": "ok", "sandbox_name": "sbx-steprecov01", "ts": "2026-10-23T10:15:03.512Z"}
+{"step": 4, "action": "install_dependencies", "status": "ok", "sandbox_name": "sbx-steprecov01", "ts": "2026-10-23T10:15:06.890Z"}
+{"step": 5, "action": "create_snapshot_checkpoint", "status": "ok", "snapshot_id": "snap-clean-step5", "sandbox_name": "sbx-steprecov01", "ts": "2026-10-23T10:15:07.410Z"}
+{"step": 6, "action": "synthesize_failing_test", "status": "ok", "sandbox_name": "sbx-steprecov01", "ts": "2026-10-23T10:15:09.120Z"}
+{"step": 7, "action": "execute_risky_test_runner", "status": "error", "error": "AssertionFailure: segmentation fault in native binding", "sandbox_name": "sbx-steprecov01", "ts": "2026-10-23T10:15:10.550Z"}
+{"event": "policy_applied", "policy": "rollback", "target_checkpoint": "snap-clean-step5", "reason": "MidTaskFailure at step 7 - restoring clean snapshot", "sandbox_name": "sbx-steprecov01", "ts": "2026-10-23T10:15:10.980Z"}
+{"step": 8, "action": "apply_repaired_reproduction_harness", "status": "ok", "sandbox_name": "sbx-steprecov01", "ts": "2026-10-23T10:15:12.210Z"}
+{"step": 9, "action": "re_run_failing_test_reproduction", "status": "ok", "sandbox_name": "sbx-steprecov01", "ts": "2026-10-23T10:15:13.670Z"}
+{"step": 10, "action": "export_proof_artifacts_and_cleanup", "status": "ok", "sandbox_name": "sbx-steprecov01", "ts": "2026-10-23T10:15:14.330Z"}
