@@ -1,0 +1,30 @@
+{
+  "cleanup_on_success": true,
+  "cleanup_on_failure": true,
+  "cleanup_on_interrupt": true,
+  "sandbox_names": [
+    "sbx-evalrun01",
+    "sbx-evalrun02",
+    "sbx-evalrun03",
+    "sbx-evalrun04",
+    "sbx-evalrun05",
+    "sbx-evalrun06",
+    "sbx-evalrun07",
+    "sbx-evalrun08",
+    "sbx-evalrun09",
+    "sbx-evalrun10",
+    "sbx-evalrun11",
+    "sbx-evalrun12",
+    "sbx-evalrun13",
+    "sbx-evalrun14",
+    "sbx-evalrun15",
+    "sbx-evalrun16",
+    "sbx-evalrun17",
+    "sbx-evalrun18",
+    "sbx-evalrun19",
+    "sbx-evalrun20",
+    "sbx-steprecov01",
+    "sbx-seccontain01",
+    "sbx-seeddemo1"
+  ]
+}
