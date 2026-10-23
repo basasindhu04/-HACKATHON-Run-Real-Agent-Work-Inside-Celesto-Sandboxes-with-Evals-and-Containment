@@ -1,0 +1,7 @@
+{
+  "failed_step": 7,
+  "total_steps": 10,
+  "policy": "rollback",
+  "rationale": "When reproduction step 7 encounters a fatal corruption or environment inconsistency, resuming with compromised disk state risks cascading test flakes, while starting completely fresh discards expensive dependency build artifacts. The rollback policy leverages Celesto snapshots taken at step 5 checkpoint, reverting the guest microVM to a verified clean baseline in sub-second time. This balances state integrity, deterministic reproduction, and resource efficiency without accumulating garbage.",
+  "trace_path": "reports/failure_trace.jsonl"
+}
