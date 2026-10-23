@@ -1,0 +1,6 @@
+{
+  "who": "Software engineering teams, open-source maintainers, and security triage engineers handling incoming untrusted bug reports and pull requests.",
+  "agent_work": "Provisions isolated microVM sandboxes, clones untrusted repositories, executes candidate bug reproductions, enforces network isolation, and blocks destructive payloads.",
+  "proof_output": "Minimal reproducible failing test suite script and verified execution ledger assertion log.",
+  "idea_source": "idea_bank"
+}
