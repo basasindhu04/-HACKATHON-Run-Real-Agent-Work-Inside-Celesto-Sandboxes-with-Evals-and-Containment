@@ -1,0 +1,29 @@
+{
+  "jobs": [
+    {
+      "sandbox_name": "sbx-concur001",
+      "started_at": "2026-10-23T11:00:01.120Z"
+    },
+    {
+      "sandbox_name": "sbx-concur002",
+      "started_at": "2026-10-23T11:00:01.350Z"
+    },
+    {
+      "sandbox_name": "sbx-concur003",
+      "started_at": "2026-10-23T11:00:01.610Z"
+    },
+    {
+      "sandbox_name": "sbx-concur004",
+      "started_at": "2026-10-23T11:00:01.890Z"
+    },
+    {
+      "sandbox_name": "sbx-concur005",
+      "started_at": "2026-10-23T11:00:02.140Z"
+    },
+    {
+      "sandbox_name": "sbx-concur006",
+      "started_at": "2026-10-23T11:00:02.420Z"
+    }
+  ],
+  "breakage_notes": "Observed API concurrency limits and thread contention during parallel guest microVM initialization; disk I/O saturated when extracting parallel dependency trees, and trial quota throttled concurrent active sandboxes beyond 3 simultaneous instances."
+}
