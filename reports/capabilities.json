@@ -1,0 +1,19 @@
+{
+  "capabilities": [
+    {
+      "id": "safety_hooks",
+      "why": "Safety hooks intercept and inspect commands on the control plane before dispatching to the guest, instantly blocking destructive commands (e.g., recursive deletion, fork bombs, credential leaks) before execution reaches the microVM.",
+      "evidence_path": "app/agent.py"
+    },
+    {
+      "id": "network_policy",
+      "why": "Strict network policy isolates the microVM execution zone by cutting off outbound public egress or allowing only verified endpoints, neutralizing prompt injection exfiltration attacks that try to leak environment tokens.",
+      "evidence_path": "reports/evidence/containment.log"
+    },
+    {
+      "id": "snapshots",
+      "why": "Snapshots capture point-in-time microVM memory and disk state prior to executing risky test reproduction steps, allowing instant sub-second rollback to a known healthy baseline when mid-task failures occur.",
+      "evidence_path": "app/celesto_client.py"
+    }
+  ]
+}
